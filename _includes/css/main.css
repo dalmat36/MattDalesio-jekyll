@@ -454,3 +454,10 @@ footer .footer-below {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
 }
+
+
+
+/*My Styles */
+#blog .container{
+    padding-top: 100px;
+}
