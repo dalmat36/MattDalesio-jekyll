@@ -38,16 +38,14 @@ footer:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
+  - title: linkedin
+    url: https://www.linkedin.com/in/matt-dalesio-9350a042
   - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/jekyll
+    url: https://twitter.com/mddalesio
+  - title: instagram
+    url: https://www.instagram.com/mddalesio/
+  - title: wordpress
+    url: http://www.mattdalesio.wordpress.com
 
 # Postal address (add as many lines as necessary)
 address:
@@ -60,3 +58,6 @@ credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+#about me
+profile: 'Matt Dalesio is a software / database developer for the Research and Development department at AccuWeather Inc. where he helps to deliver new innovative products that include life-saving alerts and actionable weather information. He has worked in a technical field for more than 7 years and holds a Bachelors of Science degree in Electronics Engineering Technology from the Pennsylvania College of Technology.'
