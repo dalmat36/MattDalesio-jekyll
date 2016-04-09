@@ -12,18 +12,15 @@
             <div class="col-md-8 col-md-offset-2">
                 <!-- First Blog Post -->
                 <h3>
-                    <a href="{{ post.url }}">{{ post.title }}</a>
+                    <a href="{{post.url}}">{{ post.title }}</a>
                 </h3>
-                <p><i class="fa fa-folder-open"></i> Posted in: {{ post.categories | join: ',' }}</p>
-                <p><i class="fa fa-clock-o"></i> {{ post.date | date: '%B %d, %Y'}}</p>
+                 <p>By Matt Dalesio | <i class="fa fa-clock-o"></i> {{ post.date | date: '%B %d, %Y'}}  |  
+                <i class="fa fa-folder-open"></i> Posted in: {{ post.categories | join: ',' }}</p> 
                 <hr>
-                <img class="img-responsive" src="https://mattdalesio.files.wordpress.com/2016/04/geojsonio-psugolf-min.png" height="300" width="900" alt="">
-                <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore
-                    nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis
-                    rerum.</p>
-                <a class="btn btn-primary" href="#">Read More <i class="fa fa-chevron-circle-right"></i></span></a>
-
+                 <img class="img-responsive" src="{{post.img}}" height="300"
+                width="900" alt="">
+                {{ post.excerpt }}
+                <a class="btn btn-primary" href="{{post.url}}">Read More <i class="fa fa-chevron-circle-right"></i></span></a>
                 <hr>
             </div>
             {% endfor %}

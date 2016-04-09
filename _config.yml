@@ -1,7 +1,7 @@
 # Site settings
 title: Matt Dalesio
 email: matthew.dalesio@outlook.com
-url: http://dalmat36.github.io/MattDalesio-jekyll
+url: http://localhost:4000
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 skills: "Software / Database Developer"
 meta_author: Dalesio Matt
@@ -56,8 +56,33 @@ address:
 credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
 
 # Build settings
-markdown: kramdown
-permalink: pretty
+baseurl: ""
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: rouge
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+# Octopress
+
+# Default extensions
+post_ext: md
+page_ext: md
+
+# Found in _templates/
+#post_layout: post
+#page_layout: page
+
+# Format titles with titlecase?
+titlecase: true
 
 #about me
 profile: 'Matt Dalesio is a software / database developer for the Research and Development department at AccuWeather Inc. where he helps to deliver new innovative products that include life-saving alerts and actionable weather information. He has worked in a technical field for more than 7 years and holds a Bachelors of Science degree in Electronics Engineering Technology from the Pennsylvania College of Technology.'

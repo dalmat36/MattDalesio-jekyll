@@ -1,0 +1,29 @@
+<!-- Blog Grid Section -->
+<section id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                {% if page.link %}
+                <h3><a href="{{ page.link }}">{{ page.title }}</a></h3> {% else %}
+                <h3><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h3> {% endif %}
+                <p>By Matt Dalesio | <i class="fa fa-clock-o"></i> {{ page.date | date: '%B %d, %Y'}}  |  
+                <i class="fa fa-folder-open"></i> Posted in: {{ page.categories | join: ',' }}</p> 
+                 <hr>                        
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                 <img class="img-responsive" src="{{page.img}}" height="300"
+                width="900" alt="">
+                {{ content }}
+                <hr>
+               <p><i class="fa fa-tags"></i> Tags: {{ page.tags | join: ', ' }}</p> 
+            </div>
+        </div>
+    </div>
+</section>
+        {% if site.owner.disqus-shortname and page.comments == true %}
+        <section id="disqus_thread"></section>
+        <!-- /#disqus_thread -->
+        {% endif %}
