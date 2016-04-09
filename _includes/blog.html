@@ -11,13 +11,11 @@
             {% for post in site.posts %}
             <div class="col-md-8 col-md-offset-2">
                 <!-- First Blog Post -->
-                <h2>
-                    <a href="#">{{ post.client }}</a>
-                </h2>
-                <p class="lead">
-                    by <a href="index.php">Start Bootstrap</a>
-                </p>
-                <p><i class="fa fa-clock-o"></i> {{ post.project-date }}</p>
+                <h3>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </h3>
+                <p><i class="fa fa-folder-open"></i> Posted in: {{ post.categories | join: ',' }}</p>
+                <p><i class="fa fa-clock-o"></i> {{ post.date | date: '%B %d, %Y'}}</p>
                 <hr>
                 <img class="img-responsive" src="https://mattdalesio.files.wordpress.com/2016/04/geojsonio-psugolf-min.png" height="300" width="900" alt="">
                 <hr>
