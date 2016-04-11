@@ -1,10 +1,11 @@
 ---
 layout: post-index
 date: 2016-04-07
-img: https://cdn1.lockerdome.com/uploads/c7144be1864f155eed5bc461ad7b7e842c1155ac6350da8a56a061fb1411724f_large
+img: https://s3.amazonaws.com/images-mddalesio/Technologies/aws-lambda.jpg
 alt: image-alt
 tag: [AWS, Lambda, Groovy, Java]
 category: [Cloud]
+comments: true
 ---
 For the past couple of weeks I have been experimenting with Amazon Web Services (AWS). In particular I have been evaluating the Lambda, API Gateway, and DynamoDB products. AWS Lambda is a serverless cloud computing product that enables developers to create scalable event-driven systems and application backends without maintaining servers and only paying for the compute time used. In this post I show an example of using a Java / Groovy lambda function.
 
