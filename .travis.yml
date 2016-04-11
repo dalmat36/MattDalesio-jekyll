@@ -1,6 +1,6 @@
 language: ruby
 rvm:
 - 2.1
-install: gem install jekyll -v 3.1.2 && gem install s3_website && gem install jekyll-sitemap && gem install jekyll-gist
+install: gem install jekyll -v 3.1.2 && gem install s3_website && gem install jekyll-sitemap && gem install jekyll-gist && gem install jekyll-paginate
 script: jekyll build
 after_success: s3_website push
