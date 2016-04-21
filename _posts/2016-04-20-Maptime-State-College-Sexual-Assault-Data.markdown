@@ -1,0 +1,15 @@
+---
+layout: post-index
+date: 2016-04-20
+img: https://s3.amazonaws.com/images-mddalesio/Maps/Maptime-StateCollege-SexualAssault.jpg
+alt: image-alt
+tag: [LeafLet]
+category: [Maps]
+comments: true
+---
+
+Tonight I attended my second <a href="http://www.meetup.com/Maptime-State-College/">Maptime State College meetup</a>. The topic presented tonight was the usage of the open-source javascript library <a href="http://leafletjs.com/">Leaflet</a> to map a partial sexual assault dataset from the University Park Police. Many thanks to Sophie and Carolyn for the walk through of using this tool. 
+
+
+
+ 
