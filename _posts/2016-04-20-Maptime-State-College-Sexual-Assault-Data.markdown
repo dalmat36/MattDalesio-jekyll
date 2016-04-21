@@ -10,6 +10,8 @@ comments: true
 
 Tonight I attended my second <a href="http://www.meetup.com/Maptime-State-College/">Maptime State College meetup</a>. The topic presented tonight was the usage of the open-source javascript library <a href="http://leafletjs.com/">Leaflet</a> to map a partial sexual assault dataset from the University Park Police. Many thanks to Sophie and Carolyn for the walk through of using this tool. 
 
+<script src="https://gist.github.com/dalmat36/841eb621f5607bc85e6ec20822d18696.js"></script>
+
 
 
  
