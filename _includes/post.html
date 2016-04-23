@@ -14,9 +14,12 @@
         </div>
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                 <img class="img-responsive" src="{{page.img}}" height="300"
-                width="900" alt="">
+                {% if post.map %}
                 {{ content }}
+                {% else %}
+                <img class="img-responsive" src="{{post.img}}" height="300" width="900" alt="">
+                {{ content }}
+                {% endif %}
                 <hr>
                <p><i class="fa fa-tags"></i> Tags: {{ page.tags | join: ', ' }}</p> 
             </div>
