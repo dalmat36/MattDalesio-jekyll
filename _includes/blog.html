@@ -16,7 +16,11 @@
                 <p>By Matt Dalesio | <i class="fa fa-clock-o"></i> {{ post.date | date: '%B %d, %Y'}} |
                     <i class="fa fa-folder-open"></i> Posted in: {{ post.categories | join: ',' }}</p>
                 <hr>
+                {% if  post.map %}
+                {{ post.excerpt }}
+                {% else %}
                 <img class="img-responsive" src="{{post.img}}" height="300" width="900" alt=""> {{ post.excerpt }}
+                {% endif %}
                 <a class="btn btn-primary" href="{{post.url}}">Read More <i class="fa fa-chevron-circle-right"></i></span></a>
                 <hr> {% endfor %}
                 <!-- Pagination links -->
