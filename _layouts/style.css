@@ -19,7 +19,7 @@
 {% include css/timeline/style.css %}
 {% include css/freelancer/freelancer.css %}
 
-hr.code:after{content: "\f121"; background-color: #4298b8;}
+hr.code:after{content: "\f1c0"; background-color: #4298b8;}
 #blog .container{
     padding-top: 50px;
 }
