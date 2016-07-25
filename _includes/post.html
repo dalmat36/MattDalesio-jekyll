@@ -14,10 +14,10 @@
         </div>
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                {% if post.map %}
+                {% if page.map %}
                 {{ content }}
-                {% else %}
-                <img class="img-responsive" src="{{page.img}}" height="300" width="900" alt="">
+                {% else page.image %}
+                <a href="{{page.img}}"><img class="img-responsive" src="{{page.img}}" height="300" width="900" alt=""></a>
                 {{ content }}
                 {% endif %}
                 <hr>
