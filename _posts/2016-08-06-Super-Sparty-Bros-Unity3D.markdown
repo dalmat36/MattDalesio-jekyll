@@ -13,7 +13,7 @@ by Brian Winn <i class="fa fa-twitter" aria-hidden="true"></i>[@winnBrian](https
 course to be very helpful in creating a functional game with a menu system. It has given me a great starting point for creating my own games.
 If you have an interest in game development I would highly recommend checking out the courses on [Coursera](https://www.coursera.org/specializations/game-development). 
 
-Below is the WebGL version of the game which is hosted in an Amazon AWS S3 bucket. 
+Below is the WebGL version of the game which is hosted in an AWS S3 bucket. 
 
 <style>
 iframe[seamless]{
