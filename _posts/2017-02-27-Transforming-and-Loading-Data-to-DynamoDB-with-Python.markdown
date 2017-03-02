@@ -72,7 +72,7 @@ Below is the new desired format. Notice all empty strings are null since DynamoD
 }
 {% endhighlight %}
 
-Transformer
+*Transformer
 This is my first practical usage of the Python. In the past I've used java and groovy for transforming data in
 code based solutions. The script below reads in the existing Tracks.json dataset, transforms each of the track 
 objects to the new format, and writes out a new JSON to the NewTracks.json file. 
