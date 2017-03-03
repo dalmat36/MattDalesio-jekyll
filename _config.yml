@@ -62,10 +62,9 @@ baseurl: ""
 permalink:   /:year/:month/:day/:title/
 markdown:    kramdown
 highlighter: rouge
-gems:
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-paginate
+gems: [jekyll-paginate]
+
+ 
 
 kramdown:
   auto_ids: true
@@ -74,7 +73,7 @@ kramdown:
   toc_levels: 1..6
   enable_coderay: false
 
-paginate: 2
+paginate: 5
 paginate_path: "/blog/page:num/"
 # Octopress
 
