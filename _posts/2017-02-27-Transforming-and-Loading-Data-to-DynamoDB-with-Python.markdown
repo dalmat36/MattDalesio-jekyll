@@ -72,9 +72,7 @@ Below is the new desired format. Notice all empty strings are null since DynamoD
 }
 {% endhighlight %}
 
-* Transformer
-This is my first practical usage of the Python. In the past I've used java and groovy for transforming data in
-code based solutions. The script below reads in the existing Tracks.json dataset, transforms each of the track 
+The script below reads in the existing Tracks.json dataset, transforms each of the track 
 objects to the new format, and writes out a new JSON to the NewTracks.json file. 
 
 {% highlight python %}
@@ -128,7 +126,7 @@ with open('NewTracks.json', 'w+') as f:
   json.dump(output, f, ensure_ascii=False)
 {% endhighlight %}
 
-* Loading Data
+
 The following script reads in the transformed track JSON file and posts each of the tracks to the track API. 
 
 
