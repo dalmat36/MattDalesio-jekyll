@@ -72,7 +72,7 @@ Below is the new desired format. Notice all empty strings are null since DynamoD
 }
 {% endhighlight %}
 
-*Transformer
+* Transformer
 This is my first practical usage of the Python. In the past I've used java and groovy for transforming data in
 code based solutions. The script below reads in the existing Tracks.json dataset, transforms each of the track 
 objects to the new format, and writes out a new JSON to the NewTracks.json file. 
@@ -126,4 +126,86 @@ with open('Tracks.json') as data_file:
         output.append(d)
 with open('NewTracks.json', 'w+') as f:
   json.dump(output, f, ensure_ascii=False)
+{% endhighlight %}
+
+* Loading Data
+The following script reads in the transformed track JSON file and posts each of the tracks to the track API. 
+
+
+{% highlight python %}
+from __future__ import print_function # Python 2/3 compatibility
+import json
+import requests
+
+with open("NewTracks.json") as json_file:
+    tracks = json.load(json_file)
+    for track in tracks:
+        trackName = track['name']
+        print("Adding track:", trackName)
+
+        headers = {'content-type': 'application/json'}
+        r = requests.post("https://xxxxxxx.execute-api.us-east-1.amazonaws.com/dev/tracks", data=json.dumps(track),headers=headers)
+        print(r.status_code, r.reason)
+{% endhighlight %}
+
+The API calls an AWS Lambda function to insert the track into DynamoDB.
+{% highlight javascript %}
+'use strict';
+
+const uuid = require('uuid');
+const AWS = require('aws-sdk'); // eslint-disable-line import/no-extraneous-dependencies
+
+const dynamoDb = new AWS.DynamoDB.DocumentClient();
+
+module.exports.create = (event, context, callback) => {
+  const timestamp = new Date().getTime();
+  const data = JSON.parse(event.body);
+  if (typeof data.name !== 'string' && 
+  typeof data.type !== 'string') {
+    console.error('Validation Failed');
+    callback(new Error('Couldn\'t create the track item.'));
+    return;
+  }
+
+  const params = {
+    TableName: process.env.DYNAMODB_TABLE,
+    Item: {
+      id: uuid.v1(),
+      name: data.name,
+      type: data.type,
+      length: data.length,
+      surfaceType: data.surfaceType,
+      lat: data.lat,
+      lon: data.lon,
+      street: data.street,
+      city: data.city,
+      state: data.state,
+      zip: data.zip,
+      primaryContact: data.primaryContact,
+      primaryPhone: data.primaryPhone,
+      primaryEmail: data.primaryEmail,
+      websiteURL: data.websiteURL,
+      facebook: data.facebook,
+      twitter: data.twitter,
+      trackLogoURL: data.trackLogoURL
+    },
+  };
+
+  // write the track to the database
+  dynamoDb.put(params, (error, result) => {
+    // handle potential errors
+    if (error) {
+      console.error(error);
+      callback(new Error('Couldn\'t create the track item.'));
+      return;
+    }
+
+    // create a response
+    const response = {
+      statusCode: 200,
+      body: JSON.stringify(result.Item),
+    };
+    callback(null, response);
+  });
+};
 {% endhighlight %}
