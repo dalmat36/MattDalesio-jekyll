@@ -1,7 +1,7 @@
 ---
 layout: post-index
 date: 2017-02-27
-img: 
+img: https://s3.amazonaws.com/images-mddalesio/Technologies/python-logo-3.6.gif
 alt: image-alt
 tag: [AWS,Python]
 category: [Data wrangling]
