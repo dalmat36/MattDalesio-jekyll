@@ -1,4 +1,7 @@
 
+
+
+
 #blog hr.book:after, #profile hr.user:after, #timeline hr.calendar:after, #contact hr.envelope:after {
     display: inline-block;
     position: relative;
@@ -40,6 +43,30 @@ hr.code:after{content: "\f1c0"; background-color: #4298b8;}
 .btn-outline-dark.active {
    /* border: solid 2px #fff;*/
     border: solid 2px #2c3e50;
+   /* color: #18bc9c;*/
+   color: white;/*#4298b8;*/
+   /* background: #fff;*/
+   background: #2c3e50;
+}
+
+.navbar-nav .btn-outline-light {margin: 0px;}
+.btn-outline-light {
+    margin-top: 15px;
+   /* border: solid 2px #fff;*/
+   border: solid 2px white;
+    color: #fff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus,
+.btn-outline-light:active,
+.btn-outline-light.active {
+   /* border: solid 2px #fff;*/
+    border: solid 2px #4298b8;
    /* color: #18bc9c;*/
    color: white;/*#4298b8;*/
    /* background: #fff;*/
