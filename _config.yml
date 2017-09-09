@@ -59,7 +59,7 @@ credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a
 host: localhost
 port: 4000
 baseurl: ""
-permalink:   /:year/:month/:day/:title/
+permalink:   /blog/:year/:month/:day/:title/
 markdown:    kramdown
 highlighter: rouge
 plugins: [jekyll-paginate]
