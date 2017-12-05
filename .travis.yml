@@ -2,6 +2,6 @@
 language: ruby
 rvm:
 - 2.4.2
-install: gem install bundler && gem install jekyll -v 3.6.2 && gem install s3_website && gem install jekyll-paginate && gem install rake -v 10.5.0 && gem list
+install: gem install bundler && gem install jekyll -v 3.6.2 && gem install s3_website && gem install jekyll-paginate && gem install rake -v 10.5.0 && gem install jekyll-feed
 script: bundle exec jekyll build
 after_success: s3_website push
