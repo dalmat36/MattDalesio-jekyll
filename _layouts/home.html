@@ -1,7 +1,12 @@
----
-layout: default
----
+<!DOCTYPE html>
 
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include navbar.html %}
 <!-- Page Header -->
 {% if page.background %}
   <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
@@ -21,49 +26,56 @@ layout: default
             {% if site.description %}
               <span class="subheading">{{ site.description }}</span>
             {% endif %}
+            <ul class="list-inline text-center">
+              {% if site.twitter_username %}
+              <li class="list-inline-item">
+                <a href="https://www.twitter.com/{{ site.twitter_username }}">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              {% endif %}
+              {% if site.facebook_username %}
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/{{ site.facebook_username }}">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              {% endif %}
+              {% if site.github_username %}
+              <li class="list-inline-item">
+                <a href="https://github.com/{{ site.github_username }}">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              {% endif %}
+              {% if site.linkedin_username %}
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              {% endif %}
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+  {% include scripts.html %}
+    </body>
+  
+  </html>
 
-        {{ content }}
-
-        <!-- Home Post List -->
-        {% for post in site.posts limit : 5 %}
-
-          <article class="post-preview">
-            <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-              <h2 class="post-title">{{ post.title }}</h2>
-              {% if post.subtitle %}
-                <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-              {% else %}
-                <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
-              {% endif %}
-            </a>
-            <p class="post-meta">Posted by
-              {% if post.author %}
-                {{ post.author }}
-              {% else %}
-                {{ site.author }}
-              {% endif %}
-              on
-              {{ post.date | date: '%B %d, %Y' }}</p>
-          </article>
-
-          <hr>
-
-        {% endfor %}
-
-        <!-- Pager -->
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
-        </div>
-
-      </div>
-    </div>
-  </div>
