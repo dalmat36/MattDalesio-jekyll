@@ -1,92 +1,20 @@
-# Site settings
-title: Matt Dalesio
-email: matthew.dalesio@outlook.com
-url: 
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-skills: "Database Specialist (BI)"
-meta_author: Dalesio Matt
+title:             Matt Dalesio
+email:             your-email@example.com
+description:       Data Engineer
+author:            Matt Dalesio
+baseurl:           "/"
+url:               "http://blackrockdigital.github.io"
 
-# Google webmaster tools
-google_verify:
-
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
-
-# Contact form:
-# - static : pass through formspree.io to validate email sending
-# - disqus : replace contact form by disqus thread
-# - comment the line below if you want to stick with the default PHP contact form
-contact: static
-
-# If you use disqus you need disqus shortname
-# https://help.disqus.com/customer/portal/articles/466208
-disqus_shortname: mattdalesio
-
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary: 4298b8 #80B3FF
-  primary-rgb: "66,152,184" #"128,179,255"
-  secondary: 2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
-
-# Footer settings
-footer:
-  copyright: Dr. Henry Jekyll
-  location: Location
-  social: Around the Web
-  credits: Credits
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: linkedin
-    url: https://www.linkedin.com/in/matt-dalesio-9350a042
-  - title: twitter
-    url: https://twitter.com/mddalesio
-  - title: instagram
-    url: https://www.instagram.com/mddalesio/
-  - title: book
-    url: http://www.mattdalesio.com/blog/
-
-# Postal address (add as many lines as necessary)
-address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
-
-# Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+# Social Profiles
+twitter_username:  mddalesio
+github_username:   dalmat36
+facebook_username: 
+linkedin_username: matt-dalesio-9350a042
 
 # Build settings
-host: localhost
-port: 4000
-baseurl: ""
-permalink:   /blog/:year/:month/:day/:title/
-markdown:    kramdown
-highlighter: rouge
-plugins: [jekyll-paginate]
-
- 
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
-
-paginate: 5
-paginate_path: "/blog/page:num/"
-# Octopress
-
-# Default extensions
-post_ext: md
-page_ext: md
-
-# Found in _templates/ 
-#post_layout: post
-#page_layout: page
-
-# Format titles with titlecase?
-titlecase: true
-
-#about me 
-profile: 'I am a Database Specialist for Penn State Outreach and Online Education. I have worked in a technical field for more than 8 years and have a Bachelors of Science degree in Electronics Engineering Technology from the Pennsylvania College of Technology.'
+markdown:          kramdown
+paginate:          5
+paginate_path:     "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
