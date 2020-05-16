@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://blackrockdigital.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blackrockdigital.github.io/" rel="alternate" type="text/html" /><updated>2020-05-16T01:40:51+00:00</updated><id>http://blackrockdigital.github.io/feed.xml</id><title type="html">Matt Dalesio</title><subtitle>Data Engineer</subtitle><author><name>Matt Dalesio</name></author><entry><title type="html">StrataConf NYC 2018</title><link href="http://blackrockdigital.github.io/2018/09/14/Strata-NYC-2018.html" rel="alternate" type="text/html" title="StrataConf NYC 2018" /><published>2018-09-14T03:45:13+00:00</published><updated>2018-09-14T03:45:13+00:00</updated><id>http://blackrockdigital.github.io/2018/09/14/Strata-NYC-2018</id><content type="html" xml:base="http://blackrockdigital.github.io/2018/09/14/Strata-NYC-2018.html">&lt;p&gt;&lt;a data-flickr-embed=&quot;true&quot; href=&quot;https://www.flickr.com/photos/oreillyconf/44745969941/in/album-72157695389239170/&quot; title=&quot;DSC_7118&quot;&gt;&lt;img src=&quot;https://farm2.staticflickr.com/1899/44745969941_45906f4f1c_c.jpg&quot; width=&quot;800&quot; height=&quot;534&quot; alt=&quot;DSC_7118&quot; /&gt;&lt;/a&gt;&lt;script async=&quot;&quot; src=&quot;//embedr.flickr.com/assets/client-code.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+I’m behind in writing this but the other week I had the opportunity to attend my first O’Reilly Strata Data Conference (StrataConf) in NYC. If you’re not familiar with the conference it’s an annual conference on the latest trends on data engineering, machine learning, and data science that is held at three locations throughout the year. My goal in attending was to gain a high-level overview of trends in industry and specifically technologies that companies are moving towards…or away from.&lt;/p&gt;
+
+&lt;p&gt;The conference used to have more of an emphasis on Hadoop and was formerly known as the Strata + Hadoop World conference… however sinse the “big data” (this term isn’t really used much either now) ecosystem has evolved rapidly over the last few years and is less Hadoop centric the conference is now called the Strata Data Conference.&lt;/p&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://ssl.gstatic.com/trends_nrtr/1544_RC03/embed_loader.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt; trends.embed.renderExploreWidget(&quot;TIMESERIES&quot;, {&quot;comparisonItem&quot;:[{&quot;keyword&quot;:&quot;/m/0fdjtq&quot;,&quot;geo&quot;:&quot;US&quot;,&quot;time&quot;:&quot;2004-01-01 2018-09-20&quot;},{&quot;keyword&quot;:&quot;/m/0ndhxqz&quot;,&quot;geo&quot;:&quot;US&quot;,&quot;time&quot;:&quot;2004-01-01 2018-09-20&quot;}],&quot;category&quot;:0,&quot;property&quot;:&quot;&quot;}, {&quot;exploreQuery&quot;:&quot;date=all&amp;geo=US&amp;q=%2Fm%2F0fdjtq,%2Fm%2F0ndhxqz&quot;,&quot;guestPath&quot;:&quot;https://trends.google.com:443/trends/embed/&quot;}); &lt;/script&gt;
+
+&lt;h2 id=&quot;observations&quot;&gt;Observations:&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Companies struggle to get value from data efforts-Data and hot new technologies will NOT solve your culture or process problems!&lt;/li&gt;
+  &lt;li&gt;In 2018 this one is probably obvious but very few people are building these systems on-prem&lt;/li&gt;
+  &lt;li&gt;Usage of Hadoop is declining in favor of Spark&lt;/li&gt;
+  &lt;li&gt;Streaming near real-time data using Apache Kafka seems to be trending upward&lt;/li&gt;
+  &lt;li&gt;Providing analysts and data scientists with Interactive query ability (Spark SQL etc)&lt;/li&gt;
+  &lt;li&gt;Companies are beginning to “democratize” data by empowering business users- (you probably don’t need a $150,000 “Unicorn” Data Scientist for most business cases)&lt;/li&gt;
+  &lt;li&gt;Few believe they have implemented everything they need to be GDPR compliant&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;hot--trending-skills-in-no-order&quot;&gt;Hot / Trending Skills (in no order):&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Data literacy&lt;/li&gt;
+  &lt;li&gt;Apache Spark (batch, streaming, SQL)&lt;/li&gt;
+  &lt;li&gt;Apache Kafka (streaming, SQL)&lt;/li&gt;
+  &lt;li&gt;Facebook Presto&lt;/li&gt;
+  &lt;li&gt;Apache Flume&lt;/li&gt;
+  &lt;li&gt;Google TensorFlow&lt;/li&gt;
+  &lt;li&gt;Google BigQuery, GIS, and Geo Viz (not widely adopted but has my attention)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;cold--declining-skills&quot;&gt;Cold / Declining Skills:&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Hadoop&lt;/li&gt;
+  &lt;li&gt;Apache Drill&lt;/li&gt;
+  &lt;li&gt;Apache Storm&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;“We have so much data…our goal should be to make it useful”&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/mpRimrk6Iq4&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Matt Dalesio</name></author><summary type="html">I’m behind in writing this but the other week I had the opportunity to attend my first O’Reilly Strata Data Conference (StrataConf) in NYC. If you’re not familiar with the conference it’s an annual conference on the latest trends on data engineering, machine learning, and data science that is held at three locations throughout the year. My goal in attending was to gain a high-level overview of trends in industry and specifically technologies that companies are moving towards…or away from.</summary></entry><entry><title type="html">Completed Twelve Myths of Data Science</title><link href="http://blackrockdigital.github.io/2018/06/13/Completed-Twelve-Myths-of-Data-Science.html" rel="alternate" type="text/html" title="Completed Twelve Myths of Data Science" /><published>2018-06-13T03:45:13+00:00</published><updated>2018-06-13T03:45:13+00:00</updated><id>http://blackrockdigital.github.io/2018/06/13/Completed-Twelve-Myths-of-Data-Science</id><content type="html" xml:base="http://blackrockdigital.github.io/2018/06/13/Completed-Twelve-Myths-of-Data-Science.html">&lt;p&gt;This week I completed Ben Sullins’(&lt;a href=&quot;https://twitter.com/teslanomicsco&quot;&gt;@teslanomicsco&lt;/a&gt;) short 30 minute Lynda.com video: “&lt;a href=&quot;https://www.lynda.com/Big-Data-tutorials/Twelve-Myths-About-Data-Science/560047-2.html&quot;&gt;Twelve Myths About Data Science&lt;/a&gt;” in which he helps to sort out fact from fiction on some claims made over the past several years from vendors and the media. I’d argue the video should actually be titled the “Twelve Myths About Big Data” as the core content was regarding data processing systems for “large” data but I understand given &lt;a href=&quot;https://www.datanami.com/2015/08/26/why-gartner-dropped-big-data-off-the-hype-curve/&quot;&gt;Garter has removed the term “Big Data” from the hype cycle&lt;/a&gt; and there are probably more people searching now for “data science.” In the end I enjoyed the video and would recommend watching it if you have access to Lynda.com. Below are a few of my key takeaways from the video.&lt;/p&gt;
+
+&lt;p&gt;Key Takeaways:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Is this a solution to a problem or a solution in search of a problem?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;As technology professionals we all like &lt;del&gt;playing&lt;/del&gt; working with the latest technology but before rushing out and standing up an expensive Hadoop or Spark cluster ask yourself this “Is this solution really necessary for the given use-case?” I think this one applies to most technology solutions as we all too often have a solution in search of a problem. Data processing solutions such as Hadoop and Spark were created for use-cases in which it was impracticable to use existing data processing technology.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Data Scientists are the key users of “Big Data” systems but shouldn’t be responsible for building and maintaining those systems&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;At this point there are numerous articles out there that explain the &lt;a href=&quot;https://www.datacamp.com/community/blog/data-scientist-vs-data-engineer&quot;&gt;differences between Data Scientists and Data Engineers&lt;/a&gt; so I won’t go into detail other than to say Data Scientists are the people with advanced statistics and domain knowledge that use data to gain insights where as the Data Engineers are the folks with a technical background who work with Data Scientists to design and build the systems required to process, clean, and store that data.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. Be realistic about the cost and resources required&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;While cloud technologies have made it much easier to provision the infrastructure for big data processing systems there is still a lot of work done behind the scenes make the data flow and become usable. The key point here is that if you have a problem that is a valid use-case for one of the “Big Data” technologies then you need to be realistic about the investment required to build, maintain, and  analyse data to solve that problem. I always get a good laugh when I come across a job posting that seems to be looking for an entire data department in a single person.
+&lt;img class=&quot;img-fluid&quot; src=&quot;https://s3.amazonaws.com/certificates-mddalesio/Lynda_TwelveMythsOfDataScience.PNG&quot; /&gt;&lt;/p&gt;</content><author><name>Matt Dalesio</name></author><summary type="html">This week I completed Ben Sullins’(@teslanomicsco) short 30 minute Lynda.com video: “Twelve Myths About Data Science” in which he helps to sort out fact from fiction on some claims made over the past several years from vendors and the media. I’d argue the video should actually be titled the “Twelve Myths About Big Data” as the core content was regarding data processing systems for “large” data but I understand given Garter has removed the term “Big Data” from the hype cycle and there are probably more people searching now for “data science.” In the end I enjoyed the video and would recommend watching it if you have access to Lynda.com. Below are a few of my key takeaways from the video.</summary></entry><entry><title type="html">Book #1 of 2018: 10% Happier</title><link href="http://blackrockdigital.github.io/2018/02/05/Book-1-2018.html" rel="alternate" type="text/html" title="Book #1 of 2018: 10% Happier" /><published>2018-02-05T13:00:13+00:00</published><updated>2018-02-05T13:00:13+00:00</updated><id>http://blackrockdigital.github.io/2018/02/05/Book-1-2018</id><content type="html" xml:base="http://blackrockdigital.github.io/2018/02/05/Book-1-2018.html">&lt;iframe class=&quot;pull-left&quot; type=&quot;text/html&quot; width=&quot;250&quot; height=&quot;418&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot; style=&quot;max-width:100%; margin-right:16px;margin-bottom:16px;&quot; src=&quot;https://read.amazon.com/kp/card?asin=B00FJ376CS&amp;amp;preview=inline&amp;amp;linkCode=kpe&amp;amp;ref_=cm_sw_r_kb_dp_.9hEAbZTEVCXY&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;The book was not exactly what I was expecting however I still found some value in it. It was more of a narriative of Dan’s career for ABC and how he was able to use meditation and mindfullness to overcome the negativity of his own mind to become 10% happier. If you are looking for a book that immediately begins discussing meditation and mindfullness then this is not that book.&lt;/p&gt;
+
+&lt;p&gt;My Rating: 3 of 5&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/rFnABqTZEvo?rel=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;Video Summary by: &lt;a href=&quot;http://www.productivitygame.com&quot; target=&quot;_blank&quot;&gt;Productivity Game&lt;/a&gt;&lt;/p&gt;</content><author><name>Matt Dalesio</name></author><summary type="html">The book was not exactly what I was expecting however I still found some value in it. It was more of a narriative of Dan’s career for ABC and how he was able to use meditation and mindfullness to overcome the negativity of his own mind to become 10% happier. If you are looking for a book that immediately begins discussing meditation and mindfullness then this is not that book.</summary></entry><entry><title type="html">2018 Goal Planning</title><link href="http://blackrockdigital.github.io/2018/01/02/2018-Goal-Planning.html" rel="alternate" type="text/html" title="2018 Goal Planning" /><published>2018-01-02T15:00:13+00:00</published><updated>2018-01-02T15:00:13+00:00</updated><id>http://blackrockdigital.github.io/2018/01/02/2018-Goal-Planning</id><content type="html" xml:base="http://blackrockdigital.github.io/2018/01/02/2018-Goal-Planning.html">&lt;p&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;/img/Short-term-Goals-min.jpg&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;text-center&quot;&gt;&lt;i class=&quot;fa fa-briefcase fa-4x&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;h2&gt;Career&lt;/h2&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Complete Microsoft Azure HDInsight Data Analyst XSeries Program by July 1st&lt;/li&gt;
+  &lt;li&gt;Complete Microsoft SQL Server 70-761 Certification exam by Dec 31st&lt;/li&gt;
+  &lt;li&gt;Read one business, technology, or personal development book each month&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;text-center&quot;&gt;&lt;i class=&quot;fa fa-bicycle fa-4x&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;h2&gt;Fitness&lt;/h2&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Be active for at least 30 minutes daily&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;text-center&quot;&gt;&lt;i class=&quot;fa fa-usd fa-4x&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;h2&gt;Finance&lt;/h2&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Pay off all debt, except the mortgage, within 3 years (Dave Ramsey Baby Step #2)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;text-center&quot;&gt;&lt;i class=&quot;fa fa-home fa-4x&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;h2&gt;Home&lt;/h2&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Paint and install hallway and living room trim by Feb 1st&lt;/li&gt;
+  &lt;li&gt;Install rear surround speakers by March 1st&lt;/li&gt;
+  &lt;li&gt;Replace interior doors with textured  doors painted white by July 1st&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Matt Dalesio</name></author><summary type="html">Career</summary></entry><entry><title type="html">Dave Ramsey’s Total Money Makeover</title><link href="http://blackrockdigital.github.io/2017/12/16/Dave-Ramsey-Total-Money-Makeover.html" rel="alternate" type="text/html" title="Dave Ramsey's Total Money Makeover" /><published>2017-12-16T20:00:13+00:00</published><updated>2017-12-16T20:00:13+00:00</updated><id>http://blackrockdigital.github.io/2017/12/16/Dave-Ramsey-Total-Money-Makeover</id><content type="html" xml:base="http://blackrockdigital.github.io/2017/12/16/Dave-Ramsey-Total-Money-Makeover.html">&lt;iframe class=&quot;pull-left&quot; type=&quot;text/html&quot; width=&quot;250&quot; height=&quot;418&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot; style=&quot;max-width:100% margin-right:16px&quot; src=&quot;https://read.amazon.com/kp/card?asin=B00DNBE8P6&amp;amp;preview=newtab&amp;amp;linkCode=kpe&amp;amp;ref_=cm_sw_r_kb_dp_hBznAbJGDQWNZ&amp;amp;hideShare=true&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;A former coworker introduced me to the Dave Ramsey blog a few years ago during a conversation regarding finance and various debt payback strategies… snowball.. avalanche… etc. Earlier this month a came across the Dave Ramsey Show on YouTube and decided to purchase the Total Money Makeover book. The book was easy to read with some entertaining quotes and lays out a simple “baby step” approach to financial fitness.&lt;/p&gt;
+
+&lt;p&gt;My Rating: 5 of 5
+&lt;!---&lt;div class=&quot;star-rating pull-right&quot; title=&quot;100%&quot;&gt;
+    &lt;div class=&quot;back-stars&quot;&gt;
+        &lt;i class=&quot;fa fa-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;fa fa-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;fa fa-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;fa fa-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;fa fa-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+        &lt;div class=&quot;front-stars&quot; style=&quot;width: 100%&quot;&gt;
+            &lt;i class=&quot;fa fa-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+            &lt;i class=&quot;fa fa-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+            &lt;i class=&quot;fa fa-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+            &lt;i class=&quot;fa fa-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+            &lt;i class=&quot;fa fa-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;    --&gt;
+&lt;!---  https://codepen.io/filcp/pen/QvZVOg --&gt;&lt;/p&gt;
+
+&lt;p&gt;The Baby Steps:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Save $1,000 cash as a starter emergency fund&lt;/li&gt;
+  &lt;li&gt;Start the debt snowball (pay off all debt except for the house)&lt;/li&gt;
+  &lt;li&gt;Finish the emergency fund (3-6 months of expenses)&lt;/li&gt;
+  &lt;li&gt;Invest 15 percent of your income in retirement&lt;/li&gt;
+  &lt;li&gt;Save for kids’ college education (ESAs and 529 plans)&lt;/li&gt;
+  &lt;li&gt;Pay off your home mortgage&lt;/li&gt;
+  &lt;li&gt;Build wealth by investing (need to be able to live off 8% interest)&lt;/li&gt;
+  &lt;li&gt;Give to charity&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;My Key Takeaways&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Stop using credit cards and buying things you don’t need&lt;/li&gt;
+  &lt;li&gt;There are three things a person can do with money: spend, save, or give. It is recommended a person so some level of all throughout the baby steps but focus primarily on one area at a time.&lt;/li&gt;
+  &lt;li&gt;It is recommended the baby steps are followed in order and you can backtrack as needed. For example, if you are working on step 2 and refrigerator quits and wipes out your starter emergency fund you now switch to paying minimums on debt and building up the emergency fund.&lt;/li&gt;
+  &lt;li&gt;Don’t be normal…normal is broke, in debt, and living paycheck to paycheck&lt;/li&gt;
+  &lt;li&gt;Before starting the baby steps, you should create a household monthly budget that accounts for planned and irregular expenses.&lt;/li&gt;
+  &lt;li&gt;Debt snowball: the debt snowball is a method of debt repayment in which a person pays down debt in order of smallest balance first… regardless of interest rate. The idea is that people will feel a sense of accomplishment and be more motivated to continue paying off debt.&lt;/li&gt;
+  &lt;li&gt;Education: a college education is important and can add value to adult life and a career BUT “college degrees don’t ensure jobs, success, or wealth. They only prove someone has passed a series of tests.” Some attribute training and education to 15% of success while the remaining 85% was attributed to attitude, perseverance, diligence, and vision… I guess the take away is DO go to college but DONT rack up a lifetime, or two, of debt you can’t pay back.&lt;/li&gt;
+  &lt;li&gt;Retirement: Ramsey recommends a person be able to live off the interest of their retirement. He uses 8% for this figure and to ignore any contributions to social security… or as he calls it “social insecurity.”&lt;/li&gt;
+  &lt;li&gt;Giving: if you make it to step 8 you are debt free, have at least 6 months expenses saved, have the house paid off, fully funded kids’ education, and have fully funded your retirement… as a decent person and regardless of your spiritual beliefs, you should give to causes you support and others in need.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Video summary by AchievingConcepts&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ouRWLK4W66c?rel=0&quot; frameborder=&quot;0&quot; gesture=&quot;media&quot; allow=&quot;encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Matt Dalesio</name></author><summary type="html">A former coworker introduced me to the Dave Ramsey blog a few years ago during a conversation regarding finance and various debt payback strategies… snowball.. avalanche… etc. Earlier this month a came across the Dave Ramsey Show on YouTube and decided to purchase the Total Money Makeover book. The book was easy to read with some entertaining quotes and lays out a simple “baby step” approach to financial fitness.</summary></entry><entry><title type="html">ITIL FOUNDATIONS TRAINING</title><link href="http://blackrockdigital.github.io/2016/10/21/ITIL-Foundations-Training.html" rel="alternate" type="text/html" title="ITIL FOUNDATIONS TRAINING" /><published>2016-10-21T03:45:13+00:00</published><updated>2016-10-21T03:45:13+00:00</updated><id>http://blackrockdigital.github.io/2016/10/21/ITIL-Foundations-Training</id><content type="html" xml:base="http://blackrockdigital.github.io/2016/10/21/ITIL-Foundations-Training.html">&lt;p&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;https://s3.amazonaws.com/certificates-mddalesio/ITILFoundation_Axelos_10202016-min.PNG&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This week I attended the ITIL Foundations training provided by &lt;a href=&quot;https://www.linkedin.com/in/jimbolton1&quot;&gt;Jim Bolton&lt;/a&gt; of &lt;a href=&quot;http://www.propointsolutions.com/&quot;&gt;ProPoint Solutions Inc.&lt;/a&gt;  My motivation for taking the training was to gain a basic understanding of the framework that is guiding 
+the university’s &lt;a href=&quot;http://smo.psu.edu/it-transformation/&quot;&gt;IT Transformation (ITX)&lt;/a&gt; initiative and more specifically learn more about my role as a database developer 
+as it fits into the Service Transition lifecycle. I was pleased that one of the first questions asked was if anyone has read the &lt;a href=&quot;http://amzn.to/2egEYvZ&quot;&gt;Phoenix Project&lt;/a&gt; as it is one of my faviorite books on 
+delivering business value using IT. As a person that came from the electronics design world I enjoy discussing the parallels of the service delivery and “DevOps” to the manufacturing world.&lt;/p&gt;</content><author><name>Matt Dalesio</name></author><summary type="html"></summary></entry><entry><title type="html">IMPLEMENTING ETL WITH SQL SERVER</title><link href="http://blackrockdigital.github.io/2016/09/09/Implementing-ETL-with-SQL-Server.html" rel="alternate" type="text/html" title="IMPLEMENTING ETL WITH SQL SERVER" /><published>2016-09-09T03:45:13+00:00</published><updated>2016-09-09T03:45:13+00:00</updated><id>http://blackrockdigital.github.io/2016/09/09/Implementing-ETL-with-SQL-Server</id><content type="html" xml:base="http://blackrockdigital.github.io/2016/09/09/Implementing-ETL-with-SQL-Server.html">&lt;p&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;https://s3.amazonaws.com/certificates-mddalesio/ImplementingETLwithSQLServer_edx_09082016-min.PNG&quot; /&gt;
+Earlier this month I finished the Microsoft course: DAT217x: Implementing ETL with SQL Server Integration Services (SSIS) via edX. I found the course very helpful in understanding the fundamentals of SSIS and was able to immediately apply some of the best practices in my current work.  Going into the course I had very little experience with SSIS other than performing a few experiments and afterwards I felt comfortable creating and modifying packages for ETL jobs. I would highly recommend the course if you are already experienced in SQL and SQL Server but are new to SSIS. However, If you have several years of experience already using SSIS you may pick up a few tips on best practices but it might not be what you are looking for.&lt;/p&gt;
+
+&lt;p&gt;Key takeaways:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The primary purpose of SSIS is not to replace SQL but rather provide a visual representation of the ETL process as well as provide some additional capability&lt;/li&gt;
+  &lt;li&gt;When possible, it is recommend that transformations be performed in Data Flow data sources as opposed to using the SSIS Data Flow Transformations&lt;/li&gt;
+  &lt;li&gt;Use sequence containers to process data in parallel to reduce execution time&lt;/li&gt;
+  &lt;li&gt;Avoid transforming large amounts of data directly from a file. Instead import the data to a temporary staging table&lt;/li&gt;
+  &lt;li&gt;Avoid using SSIS Events to track progress. Instead use logging tables&lt;/li&gt;
+  &lt;li&gt;Consider removing indexes on the destination tables before loading it&lt;/li&gt;
+  &lt;li&gt;Avoid implicit conversion. Instead use SQL or C# from outside of the SSIS runtime environment&lt;/li&gt;
+  &lt;li&gt;Use the SQL Server Destination to improve performance (Uses SQL Server’s bulk insert feature)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Matt Dalesio</name></author><summary type="html">Earlier this month I finished the Microsoft course: DAT217x: Implementing ETL with SQL Server Integration Services (SSIS) via edX. I found the course very helpful in understanding the fundamentals of SSIS and was able to immediately apply some of the best practices in my current work. Going into the course I had very little experience with SSIS other than performing a few experiments and afterwards I felt comfortable creating and modifying packages for ETL jobs. I would highly recommend the course if you are already experienced in SQL and SQL Server but are new to SSIS. However, If you have several years of experience already using SSIS you may pick up a few tips on best practices but it might not be what you are looking for.</summary></entry><entry><title type="html">TRANSITIONING FROM DATA WAREHOUSING TO BIG DATA</title><link href="http://blackrockdigital.github.io/2016/09/03/Transitioning-From-Data-Warehousing-To-Big-Data.html" rel="alternate" type="text/html" title="TRANSITIONING FROM DATA WAREHOUSING TO BIG DATA" /><published>2016-09-03T03:45:13+00:00</published><updated>2016-09-03T03:45:13+00:00</updated><id>http://blackrockdigital.github.io/2016/09/03/Transitioning-From-Data-Warehousing-To-Big-Data</id><content type="html" xml:base="http://blackrockdigital.github.io/2016/09/03/Transitioning-From-Data-Warehousing-To-Big-Data.html">&lt;p&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;https://s3.amazonaws.com/certificates-mddalesio/TransitioningFromDataWarehousingToBigData_Lynda_92016-min.PNG&quot; /&gt;&lt;/p&gt;</content><author><name>Matt Dalesio</name></author><summary type="html"></summary></entry><entry><title type="html">17 ESSENTIAL QUALITIES OF A TEAM PLAYER</title><link href="http://blackrockdigital.github.io/2016/08/22/17-essential-qualities-of-a-team-player.html" rel="alternate" type="text/html" title="17 ESSENTIAL QUALITIES OF A TEAM PLAYER" /><published>2016-08-22T03:45:13+00:00</published><updated>2016-08-22T03:45:13+00:00</updated><id>http://blackrockdigital.github.io/2016/08/22/17-essential-qualities-of-a-team-player</id><content type="html" xml:base="http://blackrockdigital.github.io/2016/08/22/17-essential-qualities-of-a-team-player.html">&lt;p&gt;&lt;a href=&quot;https://www.goodreads.com/book/show/170490.The_17_Essential_Qualities_of_a_Team_Player&quot; style=&quot;float: left; padding-right: 20px&quot;&gt;&lt;img border=&quot;0&quot; alt=&quot;The 17 Essential Qualities of a Team Player: Becoming the Kind of Person Every Team Wants&quot; src=&quot;https://d2arxad8u2l0g7.cloudfront.net/books/1380856792m/170490.jpg&quot; /&gt;&lt;/a&gt;
+I started a new position in the Outreach and Information Technology (OIT) department at Penn State’s Outreach and Online education (World Campus) back in June and was introduced to the book “The 17 Essential Qualities of a Team Player” at one of our monthly team meetings. One of the goals of the team for 2016 and beyond is the continuous improvement of soft skills and teamwork. &lt;br /&gt;“The 17 Essential Qualities of a Team Player” by John Maxwell is short but informative read on how to be a better team player. I was pleased to find that utilize some of the techniques already and discovered some that will be helpful. One of the points that really stuck with me was the story about an individual that removed a marble from a jar each Saturday to remind himself that you can’t choose how much time you get but you can choose what you do with it so make every action count. &lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Check out Smith Notes great summary of the book on YouTube:&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/92vzZMSkgx0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Matt Dalesio</name></author><summary type="html">I started a new position in the Outreach and Information Technology (OIT) department at Penn State’s Outreach and Online education (World Campus) back in June and was introduced to the book “The 17 Essential Qualities of a Team Player” at one of our monthly team meetings. One of the goals of the team for 2016 and beyond is the continuous improvement of soft skills and teamwork. “The 17 Essential Qualities of a Team Player” by John Maxwell is short but informative read on how to be a better team player. I was pleased to find that utilize some of the techniques already and discovered some that will be helpful. One of the points that really stuck with me was the story about an individual that removed a marble from a jar each Saturday to remind himself that you can’t choose how much time you get but you can choose what you do with it so make every action count.</summary></entry></feed>

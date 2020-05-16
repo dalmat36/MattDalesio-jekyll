@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    IMPLEMENTING ETL WITH SQL SERVER - Matt Dalesio
+    
+  </title>
+
+  <meta name="description" content="Earlier this month I finished the Microsoft course: DAT217x: Implementing ETL with SQL Server Integration Services (SSIS) via edX. I found the course very he...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://blackrockdigital.github.io/2016/09/09/Implementing-ETL-with-SQL-Server.html">
+  <link rel="alternate" type="application/rss+xml" title="Matt Dalesio" href="/feed.xml">
+
+</head>
+
+
+  <body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">Matt Dalesio</a> 
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+       <!-- <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="/posts">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.linkedin.com/in/matt-dalesio-9350a042">Connect</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <!-- Page Header -->
+
+<header class="masthead" style="background-image: url('/img/bg-learning.jpg')">
+
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-heading">
+          <h1>IMPLEMENTING ETL WITH SQL SERVER</h1>
+          
+          <h2 class="subheading"></h2>
+          
+          <p class="post-meta">Posted by
+            
+              Matt Dalesio
+            
+            on September 09, 2016</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+
+      <p><img class="img-fluid" src="https://s3.amazonaws.com/certificates-mddalesio/ImplementingETLwithSQLServer_edx_09082016-min.PNG" />
+Earlier this month I finished the Microsoft course: DAT217x: Implementing ETL with SQL Server Integration Services (SSIS) via edX. I found the course very helpful in understanding the fundamentals of SSIS and was able to immediately apply some of the best practices in my current work.  Going into the course I had very little experience with SSIS other than performing a few experiments and afterwards I felt comfortable creating and modifying packages for ETL jobs. I would highly recommend the course if you are already experienced in SQL and SQL Server but are new to SSIS. However, If you have several years of experience already using SSIS you may pick up a few tips on best practices but it might not be what you are looking for.</p>
+
+<p>Key takeaways:</p>
+
+<ul>
+  <li>The primary purpose of SSIS is not to replace SQL but rather provide a visual representation of the ETL process as well as provide some additional capability</li>
+  <li>When possible, it is recommend that transformations be performed in Data Flow data sources as opposed to using the SSIS Data Flow Transformations</li>
+  <li>Use sequence containers to process data in parallel to reduce execution time</li>
+  <li>Avoid transforming large amounts of data directly from a file. Instead import the data to a temporary staging table</li>
+  <li>Avoid using SSIS Events to track progress. Instead use logging tables</li>
+  <li>Consider removing indexes on the destination tables before loading it</li>
+  <li>Avoid implicit conversion. Instead use SQL or C# from outside of the SSIS runtime environment</li>
+  <li>Use the SQL Server Destination to improve performance (Uses SQL Server’s bulk insert feature)</li>
+</ul>
+
+
+      <hr>
+
+      <div class="clearfix">
+
+        
+        <a class="btn btn-primary float-left" href="/2016/09/03/Transitioning-From-Data-Warehousing-To-Big-Data.html" data-toggle="tooltip" data-placement="top" title="TRANSITIONING FROM DATA WAREHOUSING TO BIG DATA">&larr; Previous<span class="d-none d-md-inline"> Post</span></a>
+        
+        
+        <a class="btn btn-primary float-right" href="/2016/10/21/ITIL-Foundations-Training.html" data-toggle="tooltip" data-placement="top" title="ITIL FOUNDATIONS TRAINING">Next<span class="d-none d-md-inline"> Post</span> &rarr;</a>
+        
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="https://www.twitter.com/mddalesio">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/dalmat36">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/matt-dalesio-9350a042">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; Matt Dalesio 2020</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js"></script>
+
+<script src="/assets/scripts.js"></script>
+
+
+
+
+  </body>
+
+</html>
